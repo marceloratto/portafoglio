@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://*.firebaseio.com https://*.firebasedatabase.app; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://*.firebasedatabase.app wss://*.firebasedatabase.app; worker-src 'self' blob:; frame-src https://*.firebaseapp.com https://*.firebaseio.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#141414">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Portafoglio">
+<title>Portafoglio</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icone-192.png">
+<link rel="apple-touch-icon" href="icone-192.png">
+<link rel="stylesheet" href="estilo.css?v=202611082157">
+</head>
+<body>
+<div id="lock"><div class="box" id="lockbox"><p>Carregando…</p></div></div>
+<div id="app" class="hidden">
+  <aside id="side">
+    <div class="marca"><img class="ico" src="icone-192.png" alt=""><div><div class="nome">Portafoglio</div><div class="sub">finanças da família</div></div></div>
+    <button id="menu" aria-label="Menu">☰</button>
+    <nav id="nav"></nav>
+    <div class="rod" id="rod"></div>
+  </aside>
+  <main id="main"></main>
+  <button id="fab" title="Lançamento rápido" aria-label="Lançamento rápido">+</button>
+</div>
+<div id="modal" class="hidden"></div>
+<div id="toast" class="hidden"></div>
+<script src="vendor/qrcode.js"></script>
+<script type="module" src="app.js?v=202611082157"></script>
+</body>
+</html>
